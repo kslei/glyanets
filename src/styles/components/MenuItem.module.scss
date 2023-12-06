@@ -1,0 +1,81 @@
+@import '../base/base.scss';
+
+$color: #9197b3;
+$colorActive: $base;
+$bg: transparent;
+$bgActive: #5932EA;
+
+:export {
+  color: $color;
+  colorActive: $colorActive;
+  bg: $bg;
+  bgActive: $bgActive;
+}
+
+.itemRec {
+  width: calc(100% - 20px);
+  background-color: var(--background);
+  padding: 11px;
+  padding-right: 9px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+  @media (max-width: 1199.98px) {
+    margin-bottom: 0;
+  }
+}
+.item {
+  @include flex-row;
+  align-items: center;
+  @media (max-width: 575.98px) {
+    justify-content: center;
+    }
+  &_icon {
+    width: 24px;
+    height: 24px;
+    mask: var(--icon);
+    background-color: var(--color);
+  }
+  &_chevron {
+    width: 16px;
+    height: 16px;
+    mask: url('../../images/chevron.png') no-repeat center/contain;
+    background-color: var(--color);
+    @media (max-width: 1199.98px) {
+      transform: rotate(90deg);
+    }
+    @media (max-width: 991.98px) {
+      display: none;
+    }
+    @media (max-width: 767.98px) {
+      display: block;      
+    }
+    @media (max-width: 575.98px) {
+      display: none;
+    }
+  }
+  &_text {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    margin-left: 14px;
+    color: var(--color);
+    @media (max-width: 991.98px) {
+      margin-left: 5px;
+    }
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+  }
+  &_left {
+    @include flex-row;
+    align-items: center;
+  }
+}

@@ -1,0 +1,6 @@
+@import '../base/base.scss';
+
+.pages {
+  @include flex-row;
+  width: 100%;
+}

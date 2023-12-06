@@ -1,0 +1,30 @@
+$colorActive: #008767;
+$bgActive: #16C09861;
+$color: #DF0404;
+$bg: #FFC5C5;
+
+:export {
+  colorActive: $colorActive;
+  bgActive: $bgActive;
+  color: $color;
+  bg: $bg;
+}
+.myButton {
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  padding: 3px 12px;
+  border-radius: 4px;
+  color: var(--color);
+  background-color: var(--bg);
+  border: var(--border);
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}

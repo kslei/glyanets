@@ -1,0 +1,37 @@
+@import '../base/base.scss';
+
+$color: #404B52;
+$colorActive: $base;
+$bg: #F5F5F5;
+$border: #EEEEEE;
+$bgActive: #5932EA;
+
+
+:export {
+  color: $color;
+  colorActive: $colorActive;
+  bg: $bg;
+  border: $border;
+  bgActive: $bgActive;
+}
+
+.btn {
+  @include flex-center;
+  min-width: 23px;
+  min-height: 22px;
+  font-family: 'Poppins';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: -0.01em;
+  background: var(--bg);
+  border: var(--border);
+  border-radius: 4px;
+  color: var(--color);
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}

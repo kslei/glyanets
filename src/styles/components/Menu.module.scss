@@ -1,0 +1,130 @@
+@import '../base/base.scss';
+
+.menu {
+  width: calc(100% - 56px);
+  height: calc(100% - 56px);
+  position: relative;
+  padding: 28px;
+  @include flex-column;
+  align-items: flex-start;
+  background-color: $base;
+  box-shadow: 0px 10px 60px 0px #E2ECF980;
+  @media (max-width: 1399.98px) {
+    width: calc(100% - 28px);
+    height: calc(100% - 28px);
+    padding: 14px;
+  } 
+}
+.descMob {
+  width: 100%;
+  @include flex-column;
+  align-items: flex-start;
+  @media (max-width: 1199.98px) {
+    @include flex-row;
+  }
+}
+.group31 {
+  @include flex-row;
+  margin-top: 8px;
+  align-items: center;
+}
+.vector31 {
+  width: 37px;
+  height: 37px;
+  @include flex-center;
+  &_1 {
+    @include flex-center;
+    width: 37px;
+    height: 32.79px;
+    background: url('../../images/vectorGroup31-1.svg') no-repeat center/contain;
+  }
+  &_2 {
+    width: 11.56px;
+    height: 11.56px;
+    background: url('../../images/vectorGroup31-2.svg') no-repeat center/contain;
+    margin: auto;
+  }
+}
+.text {
+  margin-left: 8px;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 39px;
+  letter-spacing: 0.01em;
+}
+.version {
+  position: absolute;
+  top: 54px;
+  left: 227px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: -0.01em;
+  @media (max-width: 1399.98px) {
+    top: 40px;
+    left: 213px;
+  }
+  @media (max-width: 575.98px) {
+    top: 55px;
+    left: 190px;
+  }
+}
+.menuItem {
+  display: block;
+  width: 100%;
+  margin-top: 53px;
+  @media (max-width: 1199.98px) {
+    display: none;
+  }
+}
+.menuRow {
+  @include flex-row;
+  width: 100%;
+  margin-top: 20px;
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+.group300 {
+  @include flex-row;
+  align-items: center;
+  margin-top: 568px;
+  @media (max-width: 1599.98px) {
+    margin-top: 468px;
+  }
+  @media (max-width: 1399.98px) {
+    margin-top: 368px;
+  }
+  @media (max-width: 1199.98px) {
+    margin-top: 8px;
+  }
+  @media (max-width: 575.98px) {
+    @include flex-column;
+  }
+  &_block {
+    margin-left: 12px;
+    @media (max-width: 575.98px) {
+      margin-left: 0;
+    }
+  }
+  &_name {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+  }
+  &_position {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    @media (max-width: 575.98px) {
+      display: none;
+    }
+  }
+}
+.ellipse {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
